@@ -113,7 +113,7 @@ Let's do some initial setup by creating a serverless(!) database.
 ![Netlify URL Example](./tutorial/images/netlify-deployinprogress.png?raw=true)
 
 2.Finally, wait for deployment!
-![Netlify Setup Example](./tutorial/netlify-deploycomplete.png?raw=true)
+![Netlify Setup Example](./tutorial/images/netlify-deploycomplete.png?raw=true)
 
 
 ## 🚀 Getting Started Paths:
