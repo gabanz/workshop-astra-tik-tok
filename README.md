@@ -112,8 +112,11 @@ Let's do some initial setup by creating a serverless(!) database.
 1. Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**.
 ![Netlify URL Example](./tutorial/images/netlify-deployinprogress.png?raw=true)
 
-2.Finally, wait for deployment!
+2. Finally, wait for deployment!
 ![Netlify Setup Example](./tutorial/images/netlify-deploycomplete.png?raw=true)
+
+3. You can now click your site link and see your TikTok app has been successfully deployed!
+![Netlify Setup Example](./tutorial/images/netlify-livesite.png?raw=true)
 
 
 ## 🚀 Getting Started Paths:
