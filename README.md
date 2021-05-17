@@ -82,6 +82,39 @@ Let's do some initial setup by creating a serverless(!) database.
 3. Clone the repository:
 ![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/github-clone.png)
 
+### Netlify
+1. Using the link [HERE](https://www.netlify.com), sign up for a new account and follow **Netlify's** instructions to create a **`New Site from Git`** (_you must be logged in to see this option_).
+![Netlify Setup Example](./tutorial/images/netlify-signin.png?raw=true)
+
+2. Once signed in, you should land on the following page.
+![Netlify Setup Example](./tutorial/images/netlify-empty.png?raw=true)
+
+3. Click the `New site from Git` button.
+
+4. On the new page select `Github` and authorize Netlify to access your github Account.
+![Netlify Setup Example](./tutorial/images/netlify-createsite-01.png?raw=true)
+
+5. After allowing the `Netlify` application on Github select the `TikTok` repository.
+![Netlify Setup Example](./tutorial/images/netlify-createsite-02.png?raw=true)
+
+6. Use all of the defaults for `Basic Build Settings`
+![Netlify Setup Example](./tutorial/images/netlify-createsite-03.png?raw=true)
+
+7. Click `Show advanced` to enter the following variables:
+  - `ASTRA_DB_ID` as the cluster ID of your Astra DB. *(Found in the Astra connect screen)*
+  - `ASTRA_DB_REGION` as the region you picked when creating the DB. *(Found in the Astra connect screen)*
+  - `ASTRA_DB_KEYSPACE` as the keyspace you defined when you created your DB *(Found in the Astra connect screen)*
+  - `ASTRA_DB_APPLICATION_TOKEN` as the generated `Token` value.
+![Netlify Setup Example](./tutorial/images/netlify-createsite-04.png?raw=true)
+
+
+### Deploy Your Site
+1. Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**.
+![Netlify URL Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_url.png)
+
+2.Finally, wait for deployment!
+![Netlify Setup Example](./tutorial/netlify-createsite-7.png?raw=true)
+
 
 ## 🚀 Getting Started Paths:
 *Make sure you've completed the [prerequisites](#prerequisites) before starting this step*
