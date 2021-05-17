@@ -110,10 +110,10 @@ Let's do some initial setup by creating a serverless(!) database.
 
 ### Deploy Your Site
 1. Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**.
-![Netlify URL Example](https://raw.githubusercontent.com/kidrecursive/battlestax-tutorial/step-1/tutorial/netlify_url.png)
+![Netlify URL Example](./tutorial/images/netlify-deployinprogress.png?raw=true)
 
 2.Finally, wait for deployment!
-![Netlify Setup Example](./tutorial/netlify-createsite-7.png?raw=true)
+![Netlify Setup Example](./tutorial/netlify-deploycomplete.png?raw=true)
 
 
 ## 🚀 Getting Started Paths:
