@@ -169,18 +169,49 @@ To know more about roles of each token you can have a look to [this video.](http
     `npm exec astra-setup databasename keyspacename`
 </details>
 
-### 8. Connect Netlify to your site
-  * `netlify login` - this will pop up a browser to authenticate with netlify.  
-  * `netlify link` - this will link your workspace to the associated site
-  * `netlify env:import .env` - this will take the .env file created by astra-setup and upload it to netlify.
-  * `netlify sites:list` - will be used to allow you to execute `npm exec netlify-open
+### 8. Launch your app
+  * Run the application 
+  ```
+  netlify dev
+  ```
+  * and open http://localhost:8080 to view your application:
 
+### 9. Connect Netlify to your site
+Execute each of the commands below to link your code to your Netlify deployment.
 
-### 9. Launch your app
-  * Run the application `netlify dev` and open http://localhost:8080 to view your application:
+  * This will pop up a browser to authenticate with netlify
+  ```
+  netlify login
+  ```
+  _Note, when using GitPod the preview pane will not display this properly. You must click the "open in a new window" button in the very top right of the preview pane._
+
+  * This will link your workspace to the associated site
+  ```
+  netlify link
+  ```
+
+  * This will take the .env file created by astra-setup and upload it to netlify
+  ```
+  netlify env:import .env
+  ```
+
+  * Will be used to allow you to execute `netlify open`
+  ```
+  netlify sites:list
+  ```
 
 ### 10. Deploy to production
-  * Run `npm exec netlify-open`.
+Now that you've hooked everything up, time to deplpoy to production.
+
+  * Run
+  ```
+  netlify build
+  ```
+
+  * Then finally run
+  ```
+  netlify open
+  ```
   
   You've deployed your app to Netlify!
   ![Netlify Setup Example](./tutorial/images/netlify-livesite.png?raw=true)
