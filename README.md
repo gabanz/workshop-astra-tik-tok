@@ -1,12 +1,11 @@
 <!--- STARTEXCLUDE --->
 # Astra Tik-Tok
-*50 minutes, Advanced, [Start Building](https://github.com/DataStax-Examples/astra-tik-tok/blob/master/README.md#running-astra-tik-tok)*
+*50 minutes, Advanced, [Start Building](#running-astra-tik-tok)*
 
 A simple Tik-Tok clone running on AstraDB that leverages the Document API.
 <!--- ENDEXCLUDE --->
 
-![image](https://raw.githubusercontent.com/DataStax-Examples/astra-tik-tok/master/screenshot.jpg)
-
+![image](./screenshot.jpg)
 
 ## Objectives
 * Work through a video tutorial to build a simple Tik-Tok clone
@@ -14,9 +13,6 @@ A simple Tik-Tok clone running on AstraDB that leverages the Document API.
   
 ## How this works
 We're using Create-React-App and the AstraDB Document API to create a simple Tik-Tok clone.  Follow along in this video tutorial: [https://youtu.be/IATOicvih5A](https://youtu.be/IATOicvih5A).
-
-## Get Started
-To build and play with this app, follow the build instructions that are located here: [https://github.com/DataStax-Examples/astra-tik-tok/blob/master/README.md#running-astra-tik-tok](https://github.com/DataStax-Examples/astra-tik-tok/blob/master/README.md#running-astra-tik-tok).
 
 <!--- STARTEXCLUDE --->
 ## Running Astra Tik-Tok
@@ -46,95 +42,161 @@ Follow the instructions below to get started.
 
 ## Prerequisites
 Let's do some initial setup by creating a serverless(!) database.
+* git installed on your local system
+* github account
+* [node 15 and npm 7 or later](https://www.whitesourcesoftware.com/free-developer-tools/blog/update-node-js/)
 
-### DataStax Astra
-1. Create a [DataStax Astra account](https://astra.datastax.com/register?utm_source=github&utm_medium=referral&utm_campaign=astra-tik-tok) if you don't already have one:
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-register-basic-auth.png)
+### 1. Login/Register to Astra and create database
 
-2. On the home page. Locate the button **`Create Database`**
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-dashboard.png)
+Click the button to login or register with Datastax
 
-3. Locate the **`Get Started`** button to continue
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-select-plan.png)
+<a href="https://astra.datastax.com/register?utm_source=github&utm_medium=referral&utm_campaign=todo-astra-jamstack-netlify"><img src="https://dabuttonfactory.com/button.png?t=Create+Astra+Database&f=Calibri-bold&ts=20&tc=fff&hp=40&vp=10&c=8&bgt=unicolored&bgc=6fa8dc" /></a>
+- <details><summary>Show me!</summary>
+    <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-db.gif?raw=true" />
+</details>
 
-4. Define a **database name**, **keyspace name** and select a database **region**, then click **create database**.
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-create-db.png)
+**Use the following values when creating the database**
+|Field| Value|
+|---|---|
+|**database name**| `tiktok_workshop_db` |
+|**keypace**| `tktkposts` |
+|**Cloud Provider**| *Use the one you like, click a cloud provider logo,  pick an Area in the list and finally pick a region.* |
 
-5. Your Astra DB will be ready when the status will change from *`Pending`* to **`Active`** 💥💥💥 
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-db-active.png)
+### 2. Deploy to Netlify
+- <details><summary> What does the netlify deploy button do?</summary>The Netlify deploy button will:<ul>
+    <li>Create a new repository for you on Github</li>
+    <li>Create a site on Netlify</li>
+    <li>Link the two together.</li></ul>
+</details>
 
-6. After your database is provisioned, we need to generate an Application Token for our App. Go to the `Settings` tab in the database home screen.
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-db-settings.png)
+- Click the button to deploy
 
-1. Select `Admin User` for the role for this Sample App and then generate the token. Download the CSV so that we can use the credentials we need later.
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-db-settings-token.png)
+  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/synedra/netlify-astra-example)
+ * <details><summary>Show me!</summary>
+    <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-token.gif?raw=true" />
+    </details>
 
-1. After you have your Application Token, head to the database connect screen and copy the connection information that we'll need later. We'll replace `ASTRA_DB_APPLICATION_TOKEN` with the `Token` value that is part of your Application Token.
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/astra-db-connect.png)
+This will take a few minutes.
 
-### Github
-1. Click `Use this template` at the top of the [GitHub Repository](https://github.com/DataStax-Examples/astra-tik-tok):
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/github-use-template.png)
+  * Click on `Site deploy in progress`, 
+    <details>
+    <summary>Show me! </summary>
+    <img src="/images/deploy-1.png" />
+    </details>
 
-2. Enter a repository name and click 'Create repository from template':
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/github-create-repository.png)
+  * Click the top deploy link to see the build process.
+    <details>
+    <summary>Show me! </summary>
+    <img src="/images/deploy-2.png" />
+    </details>
 
-3. Clone the repository:
-![image](https://raw.githubusercontent.com/DataStax-Examples/sample-app-template/master/screenshots/github-clone.png)
+  * Wait until the build complete `Netlify Build Complete`,  **When you see Pushing to repository** you're ready to move on.
+    <details>
+    <summary>Show me! </summary>
+    <img src="/images/deploy-3.png" />
+    </details>
 
-### Netlify
-1. Using the link [HERE](https://www.netlify.com), sign up for a new account and follow **Netlify's** instructions to create a **`New Site from Git`** (_you must be logged in to see this option_).
-![Netlify Setup Example](./tutorial/images/netlify-signin.png?raw=true)
+  * Scroll up to the top and click on the site name (it'll be after {yourlogin}'s Team next to the Netlify button).
+    <details>
+    <summary>Show me! </summary>
+    <img src="/images/deploy-4.png" />
+    </details>
 
-2. Once signed in, you should land on the following page.
-![Netlify Setup Example](./tutorial/images/netlify-empty.png?raw=true)
+### 3. Clone your GitHub repository
 
-3. Click the `New site from Git` button.
+  * Click on the `GitHub` in `Deploys from GitHub` to get back to your new repository.  Scroll to where you were in the README.
+    <details>
+    <summary>Show me! </summary>
+    <img src="/images/deploy-5.png" />
+    </details>
 
-4. On the new page select `Github` and authorize Netlify to access your github Account.
-![Netlify Setup Example](./tutorial/images/netlify-createsite-01.png?raw=true)
+### 4. Launch GitPod IDE
+- Click the button to launch the GitPod IDE from **YOUR** repository
 
-5. After allowing the `Netlify` application on Github select the `TikTok` repository.
-![Netlify Setup Example](./tutorial/images/netlify-createsite-02.png?raw=true)
+  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#referrer)
+ * <details><summary>Show me!</summary>
+    <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-token.gif?raw=true" />
+    </details>
 
-6. Use all of the defaults for `Basic Build Settings`
-![Netlify Setup Example](./tutorial/images/netlify-createsite-03.png?raw=true)
-
-7. Click `Show advanced` to enter the following variables:
-  - `ASTRA_DB_ID` as the cluster ID of your Astra DB. *(Found in the Astra connect screen)*
-  - `ASTRA_DB_REGION` as the region you picked when creating the DB. *(Found in the Astra connect screen)*
-  - `ASTRA_DB_KEYSPACE` as the keyspace you defined when you created your DB *(Found in the Astra connect screen)*
-  - `ASTRA_DB_APPLICATION_TOKEN` as the generated `Token` value.
-![Netlify Setup Example](./tutorial/images/netlify-createsite-04.png?raw=true)
-
-
-### Deploy Your Site
-1. Click **`Deploy Site`** and once deployed copy the domain name of your new site from **Netlify**.
-![Netlify URL Example](./tutorial/images/netlify-deployinprogress.png?raw=true)
-
-2. Finally, wait for deployment!
-![Netlify Setup Example](./tutorial/images/netlify-deploycomplete.png?raw=true)
-
-3. You can now click your site link and see your TikTok app has been successfully deployed!
-![Netlify Setup Example](./tutorial/images/netlify-livesite.png?raw=true)
-
-
-## 🚀 Getting Started Paths:
-*Make sure you've completed the [prerequisites](#prerequisites) before starting this step*
-  - [Running on your local machine](#running-on-your-local-machine)
-
-### Running on your local machine
-1. Create a `.env` file and fill it with values from the `.env.sample` file.
-
-2. Make sure the package dependencies are installed
-```sh
-# install dependencies
-npm install
+### 5. Install the Netlify CLI (Command Line Interface)
+ * In the `whatever directory` run the following command to install the netlify-cli
+ ```
+ npm install -g netlify-cli
 ```
 
-3. Then, start the app in dev mode. Changes in the `src` or `functions` directories will trigger reloads.
-```sh
-# start in dev mode
-npm run dev
+### 6. Generate application token to securely connect to the database
+
+Following the [Documentation](https://docs.datastax.com/en/astra/docs/manage-application-tokens.html) create a token with `Database Admnistrator` roles.
+
+- Go the `Organization Settings`
+
+- Go to `Token Management`
+
+- Pick the role `Database Admnistrator` on the select box
+
+- Click Generate token
+
+ * <details><summary>Show me!</summary>
+    <img src="https://github.com/datastaxdevs/workshop-astra-tik-tok/raw/main/tutorial/image/astra-create-token.gif?raw=true" />
+    </details>
+
+This is what the token page looks like. 
+ * Click the **`Download CSV`** button. You are going to need these values here in a moment.
+
+![image](tutorial/images/astra-token.png?raw=true)
+
+Notice the clipboard icon at the end of each value.
+
+- `clientId:` We will use it as a username to contact Cassandra
+
+- `clientSecret:` We will use it as a password to contact Cassandra
+
+- `appToken:` We will use it as a api Key to interact with APIS.
+
+To know more about roles of each token you can have a look to [this video.](https://www.youtube.com/watch?v=nRqu44W-bMU)
+
+### 7. Configure and connect database
+ * In the repository directory run the following command to set up your Astra environment. This will verify the database you created earlier or create a new one for you if it can't find your database.
+ ```
+ npm exec astra-setup tiktok_workshop_db tktkposts
 ```
+
+<details>
+<summary>What does astra-setup do?</summary>
+    To setup your ASTRA instance, you want to run `npm exec astra-setup`
+
+    This will do the following:
+    * Have you go to your [Astra Database](https://datastx.io/workshops) to register or login. There is no credit card required to sign up. The 'Pay as you go' option gives you a huge amount of transactions for free:
+        * 30 million reads
+        * 5 million writes
+        * 40 gigabytes of storage
+    * Give steps to grab a Database Administrator Token and paste it into the input field
+    * Ask you what database you want to use (default, existing, create)
+    * Create or access the database
+    * Create/update an .env file in the project root
+    * Create/update an .astrarc file in your home directory
+        * This can be used by httpie-astra `pip3 install httpie-astra`
+        * It can also be used by the @astra/collections and @astra/rest node modules
+
+    ## Specify the database and keyspace
+    You can run the script and tell it which database/keyspace to use by using:
+    `npm exec astra-setup databasename keyspacename`
+</details>
+
+### 8. Connect Netlify to your site
+  * `netlify login` - this will pop up a browser to authenticate with netlify.  
+  * `netlify link` - this will link your workspace to the associated site
+  * `netlify env:import .env` - this will take the .env file created by astra-setup and upload it to netlify.
+  * `netlify sites:list` - will be used to allow you to execute `npm exec netlify-open
+
+
+### 9. Launch your app
+  * Run the application `netlify dev` and open http://localhost:8080 to view your application:
+
+### 10. Deploy to production
+  * Run `npm exec netlify-open`.
+  
+  You've deployed your app to Netlify!
+  ![Netlify Setup Example](./tutorial/images/netlify-livesite.png?raw=true)
+  
 <!--- ENDEXCLUDE --->
