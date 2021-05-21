@@ -8,43 +8,29 @@ A simple Tik-Tok clone running on AstraDB that leverages the Document API.
 ![image](./screenshot.jpg)
 
 ## Objectives
-* Work through a video tutorial to build a simple Tik-Tok clone
+* Deploy a TikTok clone "locally" and to production
+* Learn how to use the @astrajs document API to quickly and easily interact with JSON documents
 * Leverage Netlify and DataStax AstraDB
+
+## ℹ️ Frequently asked questions ℹ️ 
+
+- *Can I run the workshop on my computer?*
+> There is nothing preventing you from running the workshop on your own machine. 
+> If you do so, you will need
+> * git installed on your local system
+> * [node 15 and npm 7 or later](https://www.whitesourcesoftware.com/free-developer-tools/blog/update-node-js/)
+>
+> You will have to adapt commands and paths based on your environment and install the dependencies by yourself. **We won't provide support** to keep on track with schedule. However, we will do our best to give you the info you need to be successful.
+
+- *What other prerequisites are there?*
+> * You will need a github account
+> * You will also need Netlify and Astra accounts, but we'll work through that in the exercises
+> * Use **Chrome** or **Firefox** for the best experience. Other browsers are great, but don't work well with the GitPod integration we use a bit later.
+
+- *Do I need to pay for anything for this workshop?*
+> * No. All tools and services we provide here are FREE.
   
-## How this works
-We're using Create-React-App and the AstraDB Document API to create a simple Tik-Tok clone.  Follow along in this video tutorial: [https://youtu.be/IATOicvih5A](https://youtu.be/IATOicvih5A).
-
-<!--- STARTEXCLUDE --->
-## Running Astra Tik-Tok
-Follow the instructions below to get started.
-
-### Video Content:
-- [https://youtu.be/IATOicvih5A](https://youtu.be/IATOicvih5A)
-- (00:00) Introduction
-- (03:05) Creating our Database on DataStax
-- (06:52) Setting up our App
-- (12:37) Routing Pages
-- (18:02) Creating Components
-- (28:32) Introduction to Data with Netlify and Stargate
-- (30:10) Introduction to using the astrajs/collections
-- (34:01) Posting data to our Database (creating dummy Tik Tok posts)
-- (34:01) Adding authorization to access our Database
-- (43:10) Getting data from our Database (getting all our Tik Tok posts)
-- (50: 32) Viewing all our Data
-- (51:56) Rendering components based on our Data
-- (01:17:01) Editing our Data (following/unfollowing a user)
-- (01:32:57) Adding new Data to our Database (creating a Tik Tok post)
-
-### If you did like this video, please hit the Like and Subscribe button so I know to make more!
-- Twitter: https://twitter.com/ania_kubow
-- YouTube: https://youtube.com/aniakubow
-- Instagram: https://instagram.com/aniakubow
-
-## Prerequisites
-Let's do some initial setup by creating a serverless(!) database.
-* git installed on your local system
-* github account
-* [node 15 and npm 7 or later](https://www.whitesourcesoftware.com/free-developer-tools/blog/update-node-js/)
+## Let's start
 
 ### 1. Login/Register to Astra and create database
 
@@ -199,4 +185,37 @@ To know more about roles of each token you can have a look to [this video.](http
   You've deployed your app to Netlify!
   ![Netlify Setup Example](./tutorial/images/netlify-livesite.png?raw=true)
   
+
+## Video tutorial with Ania Kubow
+Thank you to our wonderful friend Ania Kubow for producing the TikTok clone. If you are not aware of Ania and love learning about coding you should absolutely check out her YouTube channel listed below.
+
+While we focused on getting you up and running to production with Astra and Netlify, Ania's video will dig into more details on the app itself. Check it out to dig in more.
+
+<!--- STARTEXCLUDE --->
+## Running Astra Tik-Tok
+We're using Create-React-App and the AstraDB Document API to create a simple Tik-Tok clone.  Follow along in this video tutorial: [https://youtu.be/IATOicvih5A](https://youtu.be/IATOicvih5A).
+
+Follow the instructions below to get started.
+
+### Video Content:
+- [https://youtu.be/IATOicvih5A](https://youtu.be/IATOicvih5A)
+- (00:00) Introduction
+- (03:05) Creating our Database on DataStax
+- (06:52) Setting up our App
+- (12:37) Routing Pages
+- (18:02) Creating Components
+- (28:32) Introduction to Data with Netlify and Stargate
+- (30:10) Introduction to using the astrajs/collections
+- (34:01) Posting data to our Database (creating dummy Tik Tok posts)
+- (34:01) Adding authorization to access our Database
+- (43:10) Getting data from our Database (getting all our Tik Tok posts)
+- (50: 32) Viewing all our Data
+- (51:56) Rendering components based on our Data
+- (01:17:01) Editing our Data (following/unfollowing a user)
+- (01:32:57) Adding new Data to our Database (creating a Tik Tok post)
+
+### If you did like this video, please hit the Like and Subscribe button so I know to make more!
+- Twitter: https://twitter.com/ania_kubow
+- YouTube: https://youtube.com/aniakubow
+- Instagram: https://instagram.com/aniakubow
 <!--- ENDEXCLUDE --->
