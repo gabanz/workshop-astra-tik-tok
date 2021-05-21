@@ -45,7 +45,7 @@ Click the button to login or register with Datastax
 |Field| Value|
 |---|---|
 |**database name**| `tiktok_workshop_db` |
-|**keypace**| `tktkposts` |
+|**keypace**| `tiktok_keyspace` |
 |**Cloud Provider**| *Use the one you like, click a cloud provider logo,  pick an Area in the list and finally pick a region.* |
 
 ### 2. Deploy to Netlify
@@ -144,7 +144,7 @@ To know more about roles of each token you can have a look to [this video.](http
 ### 7. Configure and connect database
  * In the repository directory run the following command to set up your Astra environment. This will verify the database you created earlier or create a new one for you if it can't find your database.
  ```
- npm exec astra-setup tiktok_workshop_db tktkposts
+ npm exec astra-setup tiktok_workshop_db tiktok_keyspace
 ```
 
 <details>
