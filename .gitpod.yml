@@ -7,6 +7,7 @@ tasks:
     command: |
       cd /workspace/workshop-astra-tik-tok
       echo "workshop-astra-tik-tok gitpod ready - LET'S DO THIS!"
+      npm install
 github:
   prebuilds:
     master: true
