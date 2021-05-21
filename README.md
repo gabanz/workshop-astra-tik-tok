@@ -113,7 +113,7 @@ This will take a few minutes.
 ### 4. Launch GitPod IDE
 - Click the button to launch the GitPod IDE from **YOUR** repository
 
-  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#referrer)
+  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
  * <details><summary>Show me!</summary>
     <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-token.gif?raw=true" />
     </details>
