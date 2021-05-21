@@ -210,7 +210,7 @@ Now that you've hooked everything up, time to deplpoy to production.
 
   * Then finally run
   ```
-  netlify open
+  netlify open:site
   ```
   
   You've deployed your app to Netlify!
