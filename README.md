@@ -1,6 +1,11 @@
 <!--- STARTEXCLUDE --->
-# Astra Tik-Tok
-*50 minutes, Advanced, [Start Building](#running-astra-tik-tok)*
+# Astra TikTok Clone Workshop
+
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/DataStax-Academy/workshop-spring-data-cassandra) 
+[![License Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Discord](https://img.shields.io/discord/685554030159593522)](https://discord.com/widget?id=685554030159593522&theme=dark)
+
+*50 minutes, Intermediate, [Start Building](#running-astra-tik-tok)*
 
 A simple Tik-Tok clone running on AstraDB that leverages the Document API.
 <!--- ENDEXCLUDE --->
@@ -67,25 +72,25 @@ This will take a few minutes.
   * Click on `Site deploy in progress`, 
     <details>
     <summary>Show me! </summary>
-    <img src="/images/deploy-1.png" />
+    <img src="tutorial/images/deploy-1.png" />
     </details>
 
   * Click the top deploy link to see the build process.
     <details>
     <summary>Show me! </summary>
-    <img src="/images/deploy-2.png" />
+    <img src="tutorial/images/deploy-2.png" />
     </details>
 
   * Wait until the build complete `Netlify Build Complete`,  **When you see Pushing to repository** you're ready to move on.
     <details>
     <summary>Show me! </summary>
-    <img src="/images/deploy-3.png" />
+    <img src="tutorial/images/deploy-3.png" />
     </details>
 
   * Scroll up to the top and click on the site name (it'll be after {yourlogin}'s Team next to the Netlify button).
     <details>
     <summary>Show me! </summary>
-    <img src="/images/deploy-4.png" />
+    <img src="tutorial/images/deploy-4.png" />
     </details>
 
 ### 3. Clone your GitHub repository
@@ -93,22 +98,24 @@ This will take a few minutes.
   * Click on the `GitHub` in `Deploys from GitHub` to get back to your new repository.  Scroll to where you were in the README.
     <details>
     <summary>Show me! </summary>
-    <img src="/images/deploy-5.png" />
+    <img src="tutorial/images/deploy-5.png" />
     </details>
 
 ### 4. Launch GitPod IDE
-- Click the button to launch the GitPod IDE from **YOUR** repository
+- Click the button to launch the GitPod IDE from **YOUR** repository.
 
-  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
- * <details><summary>Show me!</summary>
-    <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-token.gif?raw=true" />
-    </details>
+* _Supported by <img src="tutorial/images/chrome-logo.svg" height="20"/> Chrome and <img src="tutorial/images/firefox-logo.svg" height="20"/> Firefox_
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
 ### 5. Install the Netlify CLI (Command Line Interface)
- * In the `whatever directory` run the following command to install the netlify-cli
+ * In the `workshop-astra-tik-tok` directory run the following command to install the netlify-cli
  ```
  npm install -g netlify-cli
 ```
+ * <details><summary>Show me!</summary>
+    <img src="tutorial/images/netlify-install-cli.png?raw=true" />
+    </details>
 
 ### 6. Generate application token to securely connect to the database
 
@@ -123,7 +130,7 @@ Following the [Documentation](https://docs.datastax.com/en/astra/docs/manage-app
 - Click Generate token
 
  * <details><summary>Show me!</summary>
-    <img src="https://github.com/datastaxdevs/workshop-astra-tik-tok/raw/main/tutorial/image/astra-create-token.gif?raw=true" />
+    <img src="tutorial/images/astra-create-token.gif?raw=true" />
     </details>
 
 This is what the token page looks like. 
@@ -133,11 +140,11 @@ This is what the token page looks like.
 
 Notice the clipboard icon at the end of each value.
 
-- `clientId:` We will use it as a username to contact Cassandra
+- `Client ID:` We will use it as a username to contact Cassandra
 
-- `clientSecret:` We will use it as a password to contact Cassandra
+- `Client Secret:` We will use it as a password to contact Cassandra
 
-- `appToken:` We will use it as a api Key to interact with APIS.
+- `Token:` We will use it as a api Key to interact with APIS
 
 To know more about roles of each token you can have a look to [this video.](https://www.youtube.com/watch?v=nRqu44W-bMU)
 
