@@ -181,7 +181,7 @@ To know more about roles of each token you can have a look to [this video.](http
   ```
   netlify dev
   ```
-  * and open http://localhost:8080 to view your application:
+  * The application should automatically launch in the GitPod preview pane
 
 ### 9. Connect Netlify to your site
 Execute each of the commands below to link your code to your Netlify deployment.
@@ -213,6 +213,11 @@ Now that you've hooked everything up, time to deplpoy to production.
   * Run
   ```
   netlify build
+  ```
+
+  * Then run
+  ```
+  netlify deploy --prod
   ```
 
   * Then finally run
