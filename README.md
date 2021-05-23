@@ -64,7 +64,7 @@ Click the button to login or register with Datastax
 
   [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/datastaxdevs/workshop-astra-tik-tok)
  * <details><summary>Show me!</summary>
-    <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-token.gif?raw=true" />
+    <img src="tutorial/images/deploy-to-netlify.gif?raw=true" />
     </details>
 
 This will take a few minutes.
