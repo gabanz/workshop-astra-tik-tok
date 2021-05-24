@@ -21,13 +21,15 @@ So Netlify will create endpoints for our serverless functions based on the files
 
 For example, we have a function called `posts.js`. As we saw before, this function returns all of the current posts in our database. Netlify will see that file in our `functions` directory and dynamically create an endpoint at `/.netlify/functions/posts`.
 
-We can see this in action by manually going to the endpoint on our Netlify site: `[your-site-url]/.netlify/functions/posts`.
-
-We can also see the functions in our Netlify account.
+We can see these functions in our Netlify account.
 - Go to netlify.com and sign in.
 - Select your site from the list.
 - Select the "Functions" tab at the top.
 
-![netlify_functions](./tutorial/images/netlify_functions.png?raw=true)
+![netlify_functions](./tutorial/images/netlify_functions_tab.gif)
 
 From here we can see all our functions and get direct links as well as watch real time logs.
+
+We can also see this in action by manually going to the endpoint on our Netlify site: `[your-site-url]/.netlify/functions/posts`.
+
+![netlify_endpoint](./tutorial/images/netlify_endpoint_nav.gif)
