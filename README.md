@@ -34,6 +34,26 @@ A simple Tik-Tok clone running on AstraDB that leverages the Document API.
 
 - *Do I need to pay for anything for this workshop?*
 > * No. All tools and services we provide here are FREE.
+
+## Materials for the Session
+
+It doesn't matter if you join our workshop live or you prefer to do at your own pace, we have you covered. In this repository, you'll find everything you need for this workshop:
+
+- [Slide deck](./materials/slides.pdf)
+- [Discord chat](https://bit.ly/cassandra-workshop)
+- [Questions and Answers](https://community.datastax.com/)
+
+## 13. Homework
+
+<img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/badge.png?raw=true" width="200" align="right" />
+
+Don't forget to complete your upgrade and get your verified skill badge! Finish and submit your homework!
+
+1. Complete the practice steps from this repository as described below. Make screenshots alongside the steps
+2. Learn more about UI components in [this course](https://katacoda.com/datastax/scenarios/tiktok), complete scenario `Build a TikTok clone`, and make a screenshot of the "congratulations" page.
+3. Submit your homework [here](https://github.com/datastaxdevs/workshop-astra-tik-tok/issues/new?assignees=HadesArchitect&labels=homework%2Cpending&template=homework-assignment.md&title=%5BHW%5D+%3CNAME%3E)
+
+That's it, you are done! Expect an email next week!
   
 ## Let's start
 
