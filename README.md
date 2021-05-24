@@ -43,7 +43,7 @@ It doesn't matter if you join our workshop live or you prefer to do at your own 
 - [Discord chat](https://bit.ly/cassandra-workshop)
 - [Questions and Answers](https://community.datastax.com/)
 
-## 13. Homework
+## Homework
 
 <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/badge.png?raw=true" width="200" align="right" />
 
@@ -55,13 +55,28 @@ Don't forget to complete your upgrade and get your verified skill badge! Finish 
 
 That's it, you are done! Expect an email next week!
   
-## Let's start
+# Let's start
+
+## Table of contents
+
+1. [Create Astra Instance](#1-login/register-to-astra-and-create-database)
+2. [Deploy to Netlify](#2-deploy-to-netlify)
+3. [Clone your GitHub repository](#3-clone-your-github-repository)
+4. [Launch GitPod](#4-launch-gitpod-ide)
+5. [Install the Netlify CLI](#5-install-the-netlify-cli-(command-line-interface))
+6. [Generate application token to securely connect to the database](#6-generate-application-token-to-securely-connect-to-the-database)
+7. [Configure and connect database](#7-configure-and-connect-database)
+8. [Launch your app](#8-launch-your-app)
+9. [Connect Netlify to your site](#9-connect-netlify-to-your-site)
+10. [Deploy to production](#10-deploy-to-production)
+
+[Video tutorial with Ania Kubow](#video-tutorial-with-ania-kubow)
 
 ### 1. Login/Register to Astra and create database
 
 Click the button to login or register with Datastax
 
-<a href="https://astra.datastax.com/register?utm_source=github&utm_medium=referral&utm_campaign=todo-astra-jamstack-netlify"><img src="https://dabuttonfactory.com/button.png?t=Create+Astra+Database&f=Calibri-bold&ts=20&tc=fff&hp=40&vp=10&c=8&bgt=unicolored&bgc=6fa8dc" /></a>
+<a href="https://astra.datastax.com/register?utm_source=github&utm_medium=referral&utm_campaign=workshop-astra-tik-tok"><img src="https://dabuttonfactory.com/button.png?t=Create+Astra+Database&f=Calibri-bold&ts=20&tc=fff&hp=40&vp=10&c=8&bgt=unicolored&bgc=6fa8dc" /></a>
 - <details><summary>Show me!</summary>
     <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-db.gif?raw=true" />
 </details>
