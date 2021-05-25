@@ -154,7 +154,18 @@ This will take a few minutes.
 
 * _Supported by <img src="tutorial/images/chrome-logo.svg" height="20"/> Chrome and <img src="tutorial/images/firefox-logo.svg" height="20"/> Firefox_
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+#### WAIT! Before moving on ensure you are working out of YOUR repository, not the datastaxdevs repository.
+
+![correct notcorrect](tutorial/images/correct-not-correct.png?raw=true)
+
+If you are still using the `datastaxdevs` repo please ensure to follow the previous step, [step3](#3-clone-your-github-repository) to get to your repo.
+
+ * Ok, I've got it, just give me the button already
+ * <details>
+     <summary>CLICK HERE to launch GitPod</summary>
+
+     [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+   </details>
 
 ### 5. Install the Netlify CLI (Command Line Interface)
  * In the `workshop-astra-tik-tok` directory run the following command to install the netlify-cli
