@@ -76,7 +76,7 @@ That's it, you are done! Expect an email next week!
 
 Click the button to login or register with Datastax
 
-<a href="http://dtsx.io/tik-tok-clone"><img src="https://dabuttonfactory.com/button.png?t=Create+Astra+Database&f=Calibri-bold&ts=20&tc=fff&hp=40&vp=10&c=8&bgt=unicolored&bgc=6fa8dc" /></a>
+<a href="http://dtsx.io/tik-tok-clone"><img src="tutorial/images/create_astra_db.png?raw=true" /></a>
 - <details><summary>Show me!</summary>
     <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-db.gif?raw=true" />
 </details>
