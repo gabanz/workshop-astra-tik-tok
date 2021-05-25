@@ -117,7 +117,7 @@ Click the button to login or register with Datastax
 
 This will take a few minutes.
 
-  * Click on `Site deploy in progress`, 
+  * Click on `Site deploy in progress` within the Netlify UI, 
     <details>
     <summary>Show me! </summary>
     <img src="tutorial/images/deploy-1.png" />
