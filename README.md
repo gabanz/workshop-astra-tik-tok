@@ -60,7 +60,7 @@ That's it, you are done! Expect an email next week!
 ## Table of contents
 
 ### Part I - Run and Deploy
-1. [Create AstraDB Instance](#1-login/register-to-astradb-and-create-database)
+1. [Create AstraDB Instance](#1-login-or-register-to-astradb-and-create-database)
 2. [Deploy to Netlify](#2-deploy-to-netlify)
 3. [Clone your GitHub repository](#3-clone-your-github-repository)
 4. [Launch GitPod](#4-launch-gitpod-ide)
@@ -85,7 +85,7 @@ That's it, you are done! Expect an email next week!
 
 # Part 1 - Run and Deploy
 
-### 1. Login/Register to AstraDB and create database
+### 1. Login or Register to AstraDB and create database
 
 Click the button to login or register with Datastax
 
