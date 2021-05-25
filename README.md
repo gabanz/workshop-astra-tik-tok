@@ -244,7 +244,8 @@ To know more about roles of each token you can have a look to [this video.](http
 
 ### 9. Connect Netlify to your site
 Execute each of the commands below to link your code to your Netlify deployment.
-
+  * First thing, we'll need to **STOP** the `netlify dev` command we issued a moment ago. In the terminal where you executed the netlify command issue a `CTRL-C` (control key + the C key) in order to stop the process.
+  * Then continue with the following commands
   * This will pop up a browser to authenticate with netlify
   ```
   netlify login
@@ -261,10 +262,12 @@ Execute each of the commands below to link your code to your Netlify deployment.
   netlify env:import .env
   ```
 
+<!--
   * Will be used to allow you to execute `netlify open`
   ```
   netlify sites:list
   ```
+-->
 
 ### 10. Deploy to production
 Now that you've hooked everything up, time to deplpoy to production.
