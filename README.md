@@ -49,8 +49,8 @@ It doesn't matter if you join our workshop live or you prefer to do at your own 
 
 Don't forget to complete your upgrade and get your verified skill badge! Finish and submit your homework!
 
-1. Complete the practice steps from this repository as described below. Make screenshots alongside the steps
-2. Learn more about UI components in [this course](https://katacoda.com/datastax/scenarios/tiktok), complete scenario `Build a TikTok clone`, and make a screenshot of the "congratulations" page.
+1. Complete the practice steps from this repository as described below. Make screenshots alongside the steps and show us your deployed production TikTok clone up in Netlify.
+2. (Optional extra credit) Watch the 2 hour Ania video [HERE](#video-tutorial-with-ania-kubow), build the app yourself, and show us the completed app.
 3. Submit your homework [here](https://github.com/datastaxdevs/workshop-astra-tik-tok/issues/new?assignees=HadesArchitect&labels=homework%2Cpending&template=homework-assignment.md&title=%5BHW%5D+%3CNAME%3E)
 
 That's it, you are done! Expect an email next week!
@@ -64,7 +64,7 @@ That's it, you are done! Expect an email next week!
 2. [Deploy to Netlify](#2-deploy-to-netlify)
 3. [Clone your GitHub repository](#3-clone-your-github-repository)
 4. [Launch GitPod](#4-launch-gitpod-ide)
-5. [Install the Netlify CLI](#5-install-the-netlify-cli-(command-line-interface))
+5. [Install the Netlify CLI](#5-install-the-netlify-cli-command-line-interface)
 6. [Generate application token to securely connect to the database](#6-generate-application-token-to-securely-connect-to-the-database)
 7. [Configure and connect database](#7-configure-and-connect-database)
 8. [Launch your app](#8-launch-your-app)
