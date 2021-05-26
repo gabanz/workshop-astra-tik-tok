@@ -81,6 +81,8 @@ That's it, you are done! Expect an email next week!
 15. [Serverless configuration](#15-serverless-configuration)
 
 ### Extra resources
+[What is JamStack?](jamstack.md)
+
 [Video tutorial with Ania Kubow](#video-tutorial-with-ania-kubow)
 
 # Part 1 - Run and Deploy
