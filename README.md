@@ -1,5 +1,5 @@
 <!--- STARTEXCLUDE --->
-# Astra TikTok Clone Workshop
+# Astra DB TikTok Clone Workshop
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/DataStax-Academy/workshop-spring-data-cassandra) 
 [![License Apache2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
@@ -7,7 +7,7 @@
 
 *50 minutes, Intermediate, [Start Building](#running-astra-tik-tok)*
 
-A simple Tik-Tok clone running on AstraDB that leverages the Document API.
+A simple Tik-Tok clone running on Astra DB that leverages the Document API.
 <!--- ENDEXCLUDE --->
 
 ![image](./screenshot.jpg)
@@ -29,7 +29,7 @@ A simple Tik-Tok clone running on AstraDB that leverages the Document API.
 
 - *What other prerequisites are there?*
 > * You will need a github account
-> * You will also need Netlify and Astra accounts, but we'll work through that in the exercises
+> * You will also need Netlify and Astra DB accounts, but we'll work through that in the exercises
 > * Use **Chrome** or **Firefox** for the best experience. Other browsers are great, but don't work well with the GitPod integration we use a bit later.
 
 - *Do I need to pay for anything for this workshop?*
@@ -60,7 +60,7 @@ That's it, you are done! Expect an email next week!
 ## Table of contents
 
 ### Part I - Run and Deploy
-1. [Create AstraDB Instance](#1-login-or-register-to-astradb-and-create-database)
+1. [Create Astra DB Instance](#1-login-or-register-to-astra-db-and-create-database)
 2. [Deploy to Netlify](#2-deploy-to-netlify)
 3. [Clone your GitHub repository](#3-clone-your-github-repository)
 4. [Launch GitPod](#4-launch-gitpod-ide)
@@ -71,7 +71,7 @@ That's it, you are done! Expect an email next week!
 9. [Connect Netlify to your site](#9-connect-netlify-to-your-site)
 10. [Deploy to production](#10-deploy-to-production)
 
-### Part 2 - Working with AstraDB and the document API
+### Part 2 - Working with Astra DB and the document API
 11. [Connecting the Database](#11-connecting-the-database)
 
 ### Part 3 - Serverless Functions, how they work
@@ -87,7 +87,7 @@ That's it, you are done! Expect an email next week!
 
 # Part 1 - Run and Deploy
 
-### 1. Login or Register to AstraDB and create database
+### 1. Login or Register to Astra DB and create database
 
 Click the button to login or register with Datastax
 
@@ -210,7 +210,7 @@ Notice the clipboard icon at the end of each value.
 To know more about roles of each token you can have a look to [this video.](https://www.youtube.com/watch?v=nRqu44W-bMU)
 
 ### 7. Configure and connect database
- * In the repository directory run the following command to set up your Astra environment. This will verify the database you created earlier or create a new one for you if it can't find your database.
+ * In the repository directory run the following command to set up your Astra DB environment. This will verify the database you created earlier or create a new one for you if it can't find your database.
  ```
  npm exec astra-setup tiktok_workshop_db tiktok_keyspace
 ```
@@ -220,7 +220,7 @@ To know more about roles of each token you can have a look to [this video.](http
     To setup your ASTRA instance, you want to run `npm exec astra-setup`
 
     This will do the following:
-    * Have you go to your [Astra Database](https://datastx.io/workshops) to register or login. There is no credit card required to sign up. The 'Pay as you go' option gives you a huge amount of transactions for free:
+    * Have you go to your [Astra DB instance](https://datastx.io/workshops) to register or login. There is no credit card required to sign up. The 'Pay as you go' option gives you a huge amount of transactions for free:
         * 30 million reads
         * 5 million writes
         * 40 gigabytes of storage
@@ -348,7 +348,7 @@ We will call the collection "**tktkposts**".
 
 So now, any time we want to perform operations on our data, we will reference this method `getCollection`, and use the Document API from Stargate to do so.
 
-✅ Now that we have locally deployed our TikTok app, let's take a look at this in our database. Head to your [Astra dashboard](astra.datastax.com) and click the `Connect` button next to your database ('tiktok_workshop_db').
+✅ Now that we have locally deployed our TikTok app, let's take a look at this in our database. Head to your [Astra DB dashboard](astra.datastax.com) and click the `Connect` button next to your database ('tiktok_workshop_db').
 
 ![db_connect](./tutorial/images/db_connect.png?raw=true)
 
@@ -491,11 +491,11 @@ We can also see this in action by manually going to the endpoint on our Netlify 
 ## Video tutorial with Ania Kubow
 Thank you to our wonderful friend Ania Kubow for producing the TikTok clone. If you are not aware of Ania and love learning about coding you should absolutely check out her YouTube channel listed below.
 
-While we focused on getting you up and running to production with Astra and Netlify, Ania's video will dig into more details on the app itself. Check it out to dig in more.
+While we focused on getting you up and running to production with Astra DB and Netlify, Ania's video will dig into more details on the app itself. Check it out to dig in more.
 
 <!--- STARTEXCLUDE --->
-## Running Astra Tik-Tok
-We're using Create-React-App and the AstraDB Document API to create a simple Tik-Tok clone.  Follow along in this video tutorial: [https://youtu.be/IATOicvih5A](https://youtu.be/IATOicvih5A).
+## Running Astra DB Tik-Tok
+We're using Create-React-App and the Astra DB Document API to create a simple Tik-Tok clone.  Follow along in this video tutorial: [https://youtu.be/IATOicvih5A](https://youtu.be/IATOicvih5A).
 
 Follow the instructions below to get started.
 
