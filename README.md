@@ -62,7 +62,7 @@ That's it, you are done! Expect an email next week!
 ### Part I - Run and Deploy
 1. [Create Astra DB Instance](#1-login-or-register-to-astra-db-and-create-database)
 2. [Deploy to Netlify](#2-deploy-to-netlify)
-3. [Clone your GitHub repository](#3-clone-your-github-repository)
+3. [Access YOUR GitHub repository](#3-access-your-github-repository)
 4. [Launch GitPod](#4-launch-gitpod-ide)
 5. [Install the Netlify CLI](#5-install-the-netlify-cli-command-line-interface)
 6. [Generate application token to securely connect to the database](#6-generate-application-token-to-securely-connect-to-the-database)
@@ -143,7 +143,7 @@ This will take a few minutes.
     <img src="tutorial/images/deploy-4.png" />
     </details>
 
-### 3. Clone your GitHub repository
+### 3. Access YOUR GitHub repository
 
   * Click on the `GitHub` in `Deploys from GitHub` to get back to your new repository.  Scroll to where you were in the README.
     <details>
@@ -168,6 +168,14 @@ If you are still using the `datastaxdevs` repo please ensure to follow the previ
 
      [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
    </details>
+   
+#### WAIT! Before moving on ensure you are working out of YOUR repository, not the datastaxdevs repository.
+* From your GitPod terminal execute the following command
+```
+git remote -v
+```
+
+If the result returned from the command displays **`datastaxdevs`** then you are not in the correct repository. If this is the case please [repeat step 3 above](#3-access-your-github-repository), otherwise just move on to the next step.
 
 ### 5. Install the Netlify CLI (Command Line Interface)
  * In the `workshop-astra-tik-tok` directory run the following command to install the netlify-cli
