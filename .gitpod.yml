@@ -4,6 +4,7 @@ tasks:
       cd /workspace/workshop-astra-tik-tok 
       nvm install node
       npm install -g npm@latest
+      npm install -g netlify-cli
     command: |
       cd /workspace/workshop-astra-tik-tok
       echo "workshop-astra-tik-tok gitpod ready - LET'S DO THIS!"
