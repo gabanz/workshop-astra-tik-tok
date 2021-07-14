@@ -91,7 +91,7 @@ That's it, you are done! Expect an email next week!
 
 Click the button to login or register with Datastax
 
-<a href="http://dtsx.io/tik-tok-clone"><img src="tutorial/images/create_astra_db.png?raw=true" /></a>
+<a href="https://dtsx.io/AstraDB-714"><img src="tutorial/images/create_astra_db.png?raw=true" /></a>
 - <details><summary>Show me!</summary>
     <img src="https://github.com/datastaxdevs/workshop-spring-stargate/raw/main/images/tutorials/astra-create-db.gif?raw=true" />
 </details>
